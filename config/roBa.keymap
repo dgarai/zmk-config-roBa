@@ -144,5 +144,14 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
+        kigou {
+            bindings = <
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp SLASH      &kp TILDE                      &kp INT_YEN    &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&kp AT            &kp STAR           &kp DOLLAR  &kp PIPE       &kp GRAVE  &trans      &trans  &kp HASH       &kp STAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
+&kp PLUS          &kp EXCL           &kp CARET   &kp BACKSLASH  &kp BSLH   &trans      &trans  &kp AMPERSAND  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
+&trans            &trans             &trans      &trans         &trans     &trans      &trans  &trans                                                                 &trans
+            >;
+        };
     };
 };

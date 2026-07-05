@@ -80,13 +80,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                    &kp T                                                        &kp Y                        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                    &kp G             &kp LS(LG(S))               &kp BACKSPACE  &kp H                        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                    &kp B             &kp TAB                     &kp DEL        &kp N                        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 6 ESCAPE      &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 3 ESCAPE  &lt 7 LANGUAGE_2  &lt_to_layer_0 2 SPACE      &lt 1 ENTER    &mt LEFT_CONTROL LANGUAGE_1                             &kp RIGHT_SHIFT
+&kp Q             &kp W         &kp E             &kp R                    &kp T                                                        &kp Y             &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                    &kp G             &kp LS(LG(S))               &kp BACKSPACE  &kp H             &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                    &kp B             &kp TAB                     &kp DEL        &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 6 ESCAPE      &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 3 ESCAPE  &lt 7 LANGUAGE_2  &mt LEFT_CONTROL SPACE      &lt 1 ENTER    &lt 2 LANGUAGE_1                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp RG(PLUS) RG(MINUS)>;
         };
 
         FUNCTION {
@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &kp RG(W)  &mkp MB4  &trans    &mkp MB5  &kp RG(RS(T))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
@@ -145,7 +145,7 @@
             >;
         };
 
-        kigou {
+        KIGOU {
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp SLASH      &kp TILDE                      &kp INT_YEN    &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
 &kp AT            &kp STAR           &kp DOLLAR  &kp PIPE       &kp GRAVE  &trans      &trans  &kp HASH       &kp STAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON

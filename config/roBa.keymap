@@ -53,6 +53,41 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        MouseRightClick {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        MouseLeftClick {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+
+        MouseCenterClick {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19 20>;
+        };
+
+        MouseBackClick {
+            bindings = <&mkp MB4>;
+            key-positions = <7 6>;
+        };
+
+        MouseNextClick {
+            bindings = <&mkp MB5>;
+            key-positions = <7 8>;
+        };
+
+        TabKill {
+            bindings = <&kp RG(W)>;
+            key-positions = <19 17>;
+        };
+
+        TabBack {
+            bindings = <&kp RG(RS(T))>;
+            key-positions = <19 21>;
+        };
     };
 
     macros {

@@ -10,6 +10,7 @@
 
 &trackball {
     //automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -191,10 +192,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &trans  &mkp MB2  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB3  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &kp LG(W)  &trans    &trans  &trans    &kp LG(LS(T))
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4   &mkp MB1  &trans  &mkp MB2  &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &mkp MB3  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
             >;
         };
 

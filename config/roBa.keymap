@@ -81,12 +81,12 @@
 
         TabKill {
             bindings = <&kp RG(W)>;
-            key-positions = <7 6>;
+            key-positions = <7 5>;
         };
 
         TabBack {
             bindings = <&kp RG(RS(T))>;
-            key-positions = <7 8>;
+            key-positions = <7 9>;
         };
     };
 
@@ -115,10 +115,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E             &kp R                    &kp T                                                        &kp Y             &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                    &kp G             &kp LS(LG(S))               &kp BACKSPACE  &kp H             &kp J  &lt 8 K    &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                    &kp B             &kp TAB                     &kp DEL        &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 6 ESC         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 3 ESCAPE  &lt 7 LANGUAGE_2  &mt LEFT_CONTROL SPACE      &lt 1 ENTER    &lt 2 LANGUAGE_1                             &kp RIGHT_SHIFT
+&lt 6 Q           &kp W         &kp E             &kp R                    &kp T                                                          &kp Y             &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                    &kp G                        &kp LS(LG(S))      &kp BACKSPACE  &kp H             &kp J  &lt 8 K    &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                    &kp B                        &kp TAB            &kp DEL        &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 6 ESC         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 3 ESCAPE  &mt LEFT_CONTROL LANGUAGE_2  &lt 7 SPACE        &lt 1 ENTER    &lt 2 LANGUAGE_1                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp RG(PLUS) RG(MINUS)>;
@@ -138,16 +138,16 @@
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&trans                      &trans           &trans           &trans           &trans        &kp LG(SPACE)                &trans          &trans                                                                     &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                  &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -155,10 +155,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -182,10 +182,10 @@
 
         KIGOU {
             bindings = <
-&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp SLASH      &kp TILDE                      &kp INT_YEN    &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
-&kp AT            &kp STAR           &kp DOLLAR  &kp PIPE       &kp GRAVE  &trans      &trans  &kp HASH       &kp STAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
-&kp PLUS          &kp EXCL           &kp CARET   &kp BACKSLASH  &kp BSLH   &trans      &trans  &kp AMPERSAND  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
-&trans            &trans             &trans      &trans         &trans     &trans      &trans  &trans                                                                 &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp SLASH  &kp TILDE                      &kp BACKSLASH  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&kp AT            &kp STAR           &kp DOLLAR  &kp PIPE   &kp GRAVE  &trans      &trans  &kp HASH       &kp STAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
+&kp PLUS          &kp EXCL           &kp COLON   &kp CARET  &kp BSLH   &trans      &trans  &kp AMPERSAND  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
+&trans            &trans             &trans      &trans     &trans     &trans      &trans  &trans                                                                 &trans
             >;
         };
 
@@ -194,6 +194,15 @@
 &trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &trans  &mkp MB2  &mkp MB5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB3  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+            >;
+        };
+
+        MOUSE_bkup {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };

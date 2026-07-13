@@ -27,49 +27,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        MouseRightClick {
-            bindings = <&mkp MB1>;
-            key-positions = <18 19>;
-        };
-
-        MouseLeftClick {
-            bindings = <&mkp MB2>;
-            key-positions = <19 20>;
-        };
-
-        MouseCenterClick {
-            bindings = <&mkp MB3>;
-            key-positions = <18 19 20>;
-        };
-
-        MouseBackClick {
-            bindings = <&mkp MB4>;
-            key-positions = <19 17>;
-        };
-
-        MouseNextClick {
-            bindings = <&mkp MB5>;
-            key-positions = <19 21>;
-        };
-
-        TabKill {
-            bindings = <&kp RG(W)>;
-            key-positions = <7 5>;
-        };
-
-        TabBack {
-            bindings = <&kp RG(RS(T))>;
-            key-positions = <7 9>;
-        };
-
-        MouseCenter {
-            bindings = <&mkp MB3>;
-            key-positions = <31 32>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -96,9 +54,9 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E             &kp R                       &kp T                                                        &kp Y             &kp U  &lt 5 I   &kp O     &kp P
-&kp A             &kp S         &kp D             &kp F                       &kp G                        &kp LS(LG(S))      &kp COMMA    &kp H             &kp J  &lt 8 K   &kp L     &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                       &kp B                        &kp TAB            &kp PERIOD   &kp N             &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&lt 6 Q           &kp W         &kp E             &kp R                       &kp T                                                        &kp Y             &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S         &kp D             &kp F                       &kp G                        &kp LS(LG(S))      &kp COMMA    &kp H             &kp J  &kp K     &kp L     &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                       &kp B                        &kp TAB            &kp PERIOD   &kp N             &kp M  &mkp MB1  &mkp MB2  &lt 5 SLASH
 &lt 6 ESC         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 3 BACKSPACE  &mt LEFT_CONTROL LANGUAGE_2  &lt 7 SPACE        &lt 1 ENTER  &lt 2 LANGUAGE_1                             &kp RIGHT_SHIFT
             >;
 

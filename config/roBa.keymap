@@ -90,10 +90,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                              &trans
+&kp ESCAPE  &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+&kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&trans      &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SLASH
+&trans      &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -117,7 +117,7 @@
             >;
         };
 
-        layer_6 {
+        Bluetooth {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
@@ -130,7 +130,7 @@
             bindings = <
 &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL   &kp SLASH  &kp TILDE                            &kp BACKSLASH  &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
 &kp AT            &kp STAR           &kp DOLLAR  &kp PIPE   &kp GRAVE        &trans      &trans  &kp HASH       &kp STAR   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON
-&kp PLUS          &kp EXCL           &kp COLON   &kp CARET  &kp EXCLAMATION  &trans      &trans  &kp AMPERSAND  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
+&kp PLUS          &kp PLUS           &kp COLON   &kp CARET  &kp EXCLAMATION  &trans      &trans  &kp AMPERSAND  &kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION
 &trans            &trans             &trans      &trans     &trans           &trans      &trans  &trans                                                                 &trans
             >;
         };
@@ -141,15 +141,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4   &mkp MB1  &trans  &mkp MB2  &mkp MB5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &mkp MB3  &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
-            >;
-        };
-
-        MOUSE_bkup {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
     };

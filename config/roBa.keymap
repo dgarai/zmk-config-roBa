@@ -129,14 +129,5 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
             >;
         };
-
-        Mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LG(W)  &trans    &trans  &trans    &kp LG(LS(T))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4   &mkp MB1  &trans  &mkp MB2  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &mkp MB3  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
-            >;
-        };
     };
 };

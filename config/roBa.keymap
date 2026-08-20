@@ -27,7 +27,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Center {
+            bindings = <&mkp MB3>;
+            key-positions = <32 31>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -54,10 +61,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q             &kp W         &kp E             &kp R                        &kp T                                                  &kp Y      &kp U  &lt 5 I    &kp O       &kp P
-&kp A               &kp S         &kp D             &kp F                        &kp G  &kp LS(LG(S))                    &kp BACKSPACE  &kp H      &kp J  &kp K      &kp L       &kp MINUS
-&kp Z               &kp X         &kp C             &kp V                        &kp B  &kp TAB                          &kp DELETE     &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 LANGUAGE_2  &mo 2  &mt LEFT_CONTROL LANGUAGE_1      &kp SPACE      &kp ENTER                                &kp RIGHT_SHIFT
+&lt 3 Q             &kp W         &kp E             &kp R                       &kp T                                                       &kp Y             &kp U  &lt 5 I   &kp O     &kp P
+&kp A               &kp S         &kp D             &kp F                       &kp G                        &kp LS(LG(S))      &kp COMMA   &kp H             &kp J  &kp K     &kp L     &kp MINUS
+&kp Z               &kp X         &kp C             &kp V                       &kp B                        &kp TAB            &kp PERIOD  &kp N             &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 BACKSPACE  &mt LEFT_CONTROL LANGUAGE_2  &kp SPACE          &kp ENTER   &lt 2 LANGUAGE_1                             &lt 5 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;

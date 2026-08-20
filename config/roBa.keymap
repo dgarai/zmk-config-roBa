@@ -67,7 +67,7 @@
 &mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 BACKSPACE  &mt LEFT_CONTROL LANGUAGE_2  &kp SPACE          &kp ENTER   &lt 2 LANGUAGE_1                             &lt 5 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         ARROW {
@@ -103,10 +103,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 

@@ -32,7 +32,17 @@
 
         Center {
             bindings = <&mkp MB3>;
-            key-positions = <32 31>;
+            key-positions = <18 19 20>;
+        };
+
+        left {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        right {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
         };
     };
 
@@ -61,10 +71,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q             &kp W         &kp E             &kp R                       &kp T                                            &kp Y                        &kp U  &lt 5 I   &kp O     &kp P
-&kp A               &kp S         &kp D             &kp F                       &kp G             &kp LS(LG(S))      &kp COMMA   &kp H                        &kp J  &kp K     &kp L     &kp MINUS
-&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                       &kp B             &kp TAB            &kp PERIOD  &kp N                        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 BACKSPACE  &lt 2 LANGUAGE_2  &kp SPACE          &kp ENTER   &mt LEFT_CONTROL LANGUAGE_1                             &lt 5 DELETE
+&lt 3 Q             &kp W         &kp E             &kp R                       &kp T                                               &kp Y                        &kp U  &lt 5 I    &kp O       &kp P
+&kp A               &kp S         &kp D             &kp F                       &kp G             &kp LS(LG(S))      &kp BACKSPACE  &kp H                        &kp J  &kp K      &kp L       &kp MINUS
+&mt LEFT_SHIFT Z    &kp X         &kp C             &kp V                       &kp B             &kp TAB            &kp DELETE     &kp N                        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 BACKSPACE  &lt 2 LANGUAGE_2  &kp SPACE          &kp ENTER      &mt LEFT_CONTROL LANGUAGE_1                                &lt 5 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;

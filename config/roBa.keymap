@@ -32,7 +32,7 @@
 
         Center {
             bindings = <&mkp MB3>;
-            key-positions = <18 19 20>;
+            key-positions = <18 20>;
         };
 
         left {

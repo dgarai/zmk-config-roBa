@@ -77,7 +77,7 @@
 &mt LEFT_SHIFT ESC  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 BACKSPACE  &lt 2 LANGUAGE_2  &kp SPACE          &kp ENTER      &mt LEFT_CONTROL LANGUAGE_1                                &lt 5 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         ARROW {

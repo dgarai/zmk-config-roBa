@@ -44,6 +44,11 @@
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {

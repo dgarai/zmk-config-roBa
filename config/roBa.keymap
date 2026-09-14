@@ -33,21 +33,29 @@
         Center {
             bindings = <&mkp MB3>;
             key-positions = <18 20>;
+            timeout-ms = <80>;              // 50→80。同時押しをゆるく
+            require-prior-idle-ms = <125>;  // 打鍵中は発火させない
         };
 
         left {
             bindings = <&mkp MB1>;
             key-positions = <18 19>;
+            timeout-ms = <80>;              // 50→80。同時押しをゆるく
+            require-prior-idle-ms = <125>;  // 打鍵中は発火させない
         };
 
         right {
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
+            timeout-ms = <80>;              // 50→80。同時押しをゆるく
+            require-prior-idle-ms = <125>;  // 打鍵中は発火させない
         };
 
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            timeout-ms = <80>;              // 50→80。同時押しをゆるく
+            require-prior-idle-ms = <125>;  // 打鍵中は発火させない
         };
     };
 

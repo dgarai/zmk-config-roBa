@@ -2,12 +2,12 @@ name: "Draw Keymap"
 
 on:
   workflow_dispatch:
-  # push時に自動で実行する場合は、以下のコメントアウトを外す
-  # push:
-  #   paths:
-  #     - "config/roBa.keymap"
-  #     - "keymap_drawer.config.yaml"
-  #     - "config/roBa.dtsi"
+  # マスター（zmk-config-moNa2-v2）からの同期 push でも図を更新する
+  push:
+    paths:
+      - "config/roBa.keymap"
+      - "keymap_drawer.config.yaml"
+      - "config/roBa.dtsi"
 
 jobs:
   draw:

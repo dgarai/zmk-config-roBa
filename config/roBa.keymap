@@ -63,6 +63,15 @@
             require-prior-idle-ms = <50>;   // 125→50。取りこぼしで k/l が漏れるため緩める
         };
 
+        // J + K + L 同時押しで押している間だけ SCROLL レイヤー(5)へ
+
+        scroll_mode {
+            bindings = <&mo 5>;
+            key-positions = <18 19 20>;
+            timeout-ms = <80>;              // 他のJ/K/Lコンボと合わせる
+            require-prior-idle-ms = <50>;   // 他のJ/K/Lコンボと合わせる
+        };
+
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;

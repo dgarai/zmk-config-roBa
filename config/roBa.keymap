@@ -23,7 +23,9 @@
 &trackball {
     //automouse-layer = <4>;
 
-    scroll-layers = <5>;
+    // スクロールはドライバではなく ZMK 標準の input processor で処理する
+    // （boards/shields/roBa/roBa_R.overlay の scroller を参照）
+    // scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;

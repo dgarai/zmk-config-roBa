@@ -1,4 +1,7 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
+#include <scroll-snap.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <6>;
@@ -19,6 +22,15 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        scroller {
+            layers = <5>;   // レイヤー5 = SCROLL
+            input-processors =
+                <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
+                <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //スクロールのY軸反転（旧ドライバと同じ向き）
+                <&zip_scroll_snap>,                                 //縦横スナップ（スケーラーより前に置く）
+                <&zip_scroll_scaler 1 16>;                          //旧 CONFIG_PMW3610_SCROLL_TICK=16 相当（数値を上げるほど緩くなる）
+        };
     };
 };
 
@@ -58,4 +70,12 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
+};
+
+
+// スクロールスナップ判定（縦優先）
+// 水平から約18°以内（|y/x| < 1/3）のときだけ横スクロール、それ以外は縦スクロール
+&zip_scroll_snap {
+    x-threshold = <1 3>;
+    y-threshold = <1 3>;
 };
